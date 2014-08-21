@@ -1,0 +1,2 @@
+module StockappHelper
+end

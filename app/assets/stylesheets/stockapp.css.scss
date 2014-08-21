@@ -1,0 +1,49 @@
+// Place all the styles related to the stockapp controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#header {
+  background-color: #C1E1A6;
+  margin-top: -21px;
+}
+
+#clock {
+  color: #585858;
+  position: relative;
+  left: 30px;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: 'Josefin Slab', serif;
+  color: #FF9009;
+  padding: 20px 12px 20px 20px;
+  position: relative;
+  border: 1px solid #D9D9D9;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input[type=text] {
+  color: green;
+}
+
+#stockList {
+
+}
+
+#delete {
+  background-color: red;
+}
+
+#tabContent {
+  border: solid blue;
+  padding: 12px;
+}
+
+p {
+  border: solid black;
+  padding: 12px;
+}

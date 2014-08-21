@@ -1,0 +1,61 @@
+<div id='header'>
+  <h1>Name Pending<small>   Time to Lose Some Money</small></h1>
+</div>
+
+<div ng-controller='ClockController' id='clock'>
+  {{ clock | date:'medium' }}
+</div>
+
+<div class='row'>
+  <div class='small-4 columns'>
+    <form ng-submit='createStock'>
+      <input type='text' ng-model='newSymbol' placeholder='Symbol'>
+      <button class='button [ small radius round]' type='submit' value='Follow'>Follow</button>
+    </form>
+  </div>
+</div>
+
+<div ng-show='error'>
+  Sorry! Unable to communicate with Yahoo Finance API.
+</div>
+
+<div class='row'>
+  <div class='large-8 columns'>
+    <div id='tabs' ng-controller='TabsController'>
+      <ul>
+        <li ng-repeat='tab in tabs' ng-class='{active:isActiveTab(tab.url)}' ng-click='onClickTab(tab)'>{{ tab.title }}</li>
+      </ul>
+      <div id='mainView'>
+        <div ng-include='currentTab'></div>
+      </div>
+    </div>
+    <script type='text/ng-template' id='one.tpl.html'>
+      <div id='viewOne'>
+        <h1>My Profile</h1>
+        <p>Shit... I forgot that Im going to have to make something for people to view their own profile... damnit...</p>
+      </div>
+    </script>
+    <script type='text/ng-template' id='two.tpl.html'>
+      <div id='viewTwo' ng-controller='StocksController'>
+        <h1>My Stocks</h1>
+        <ul>
+          <li ng-repeat='stock in stocks' id='stockList'>
+            <strong>{{ stock.symbol }}</strong>
+            {{ stock.name}} </br>
+            <strong>Bid:</strong> {{ stock.bid}} </bid></br>
+            <strong>Ask:</strong> {{ stock.ask }}</br>
+            <strong>Year High:</strong> {{ stock.year_heigh}}</br>
+            <strong>Year Low:</strong> {{ stock.year_low }}</br>
+            <button class='button [ small secondary alert radius round]' href='' ng-click='deleteStock(stock.id, $index)' id='delete'>Delete</button>
+          </li>
+        </ul>
+      </div>
+    </script>
+    <script type='text/ng-template' id='three.tpl.html'>
+      <div id='viewThree'>
+        <h1>Feed</h1>
+        <p>News Feed stuff will go here so any stocks/posts your friends make will show up aqui</p>
+      </div>
+    </script>
+  </div>
+</div>
