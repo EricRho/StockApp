@@ -9,6 +9,10 @@ class StocksController < ApplicationController
     respond_with Stock.create(stock_params)
   end
 
+  def update
+    respond_with Stock.find(params[:id]).update_attributes(stock_params)
+  end
+
   def destroy
     respond_with Stock.destroy(params[:id])
   end
@@ -16,7 +20,7 @@ class StocksController < ApplicationController
   private
 
   def stock_params
-    params.require(:stock).permit(:symbol, :name, :bid, :ask, :year_low, :year_high)
+    params.require(:stock).permit(:symbol, :name, :bid, :ask, :year_low, :year_heigh)
   end
 
 end

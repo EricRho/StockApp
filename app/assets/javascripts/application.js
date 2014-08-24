@@ -10,8 +10,11 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require select2
 //= require angular
 //= require angular-resource
+//= require angular-ui-select2
 //= require main.js
 //= require_tree ./angular
 //= require_tree .
