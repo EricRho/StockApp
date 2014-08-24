@@ -12,7 +12,7 @@
 
     <div id='findSymbol' class='small-4 columns'>
       <form ng-submit='createStock()'>
-        <select ui-select2='select2Options' ng-click='createStock()' ng-model='newCompany' ng-options='stock.name for stock in stocklist' data-placeholder='Companies' ng-required='true' id='companyForm' style='width:200px'>
+        <select ui-select2='select2Options' ng-model='newCompany' ng-options='stock.name for stock in stocklist' data-placeholder='Companies' ng-required='true' id='companyForm' style='width:200px'>
           <option value=''></option>
           <option ng-repeat='stock in stocklist' value=''></option>
         </select>

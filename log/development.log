@@ -72324,3 +72324,3205 @@ ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
   Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
   Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
   Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 15:14:13 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 15:14:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:13 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 15:14:13 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 15:14:13 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 15:14:13 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 15:14:13 -0400
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 15:14:13 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:13 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:13 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:13 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:13 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:13 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:14 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:14 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:14 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:14 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:14 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:14 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 15:14:14 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.5ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 15:14:14 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.0ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (43.2ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 15:14:15 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 19:14:16.022375"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 19:14:16.022375"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 27ms (Views: 2.9ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 15:14:17 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 19:14:17.011073"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 19:14:17.011073"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Completed 201 Created in 11ms (Views: 1.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 15:14:23 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.3ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/api/stocks/15" for 127.0.0.1 at 2014-08-24 15:14:30 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"15"}
+  [1m[35mStock Load (0.3ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 15]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 12ms (ActiveRecord: 3.9ms)
+
+
+Started DELETE "/api/stocks/17" for 127.0.0.1 at 2014-08-24 15:14:30 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"17"}
+  [1m[35mStock Load (0.1ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 17]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 17]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 7ms (ActiveRecord: 3.2ms)
+
+
+Started DELETE "/api/stocks/18" for 127.0.0.1 at 2014-08-24 15:14:31 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"18"}
+  [1m[35mStock Load (0.2ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 18]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 7ms (ActiveRecord: 1.7ms)
+
+
+Started DELETE "/api/stocks/19" for 127.0.0.1 at 2014-08-24 15:14:32 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"19"}
+  [1m[35mStock Load (0.2ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 19]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 19]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 10ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 15:14:36 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.2ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 15:14:37 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.3ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.2ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.1ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 15:14:38 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.4ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 8ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 15:14:43 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20", "stock"=>{"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 19:14:43.865945"], ["name", "Novo Nordisk A/S"], ["symbol", "NVO"], ["updated_at", "2014-08-24 19:14:43.865945"], ["year_heigh", 48.42], ["year_low", 32.2]]
+  [1m[35m (4.0ms)[0m  commit transaction
+Completed 201 Created in 16ms (Views: 1.0ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 15:14:43 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20", "stock"=>{"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 19:14:43.987904"], ["name", "Novo Nordisk A/S"], ["symbol", "NVO"], ["updated_at", "2014-08-24 19:14:43.987904"], ["year_heigh", 48.42], ["year_low", 32.2]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 27ms (Views: 8.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 15:14:44 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20", "stock"=>{"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 19:14:44.063948"], ["name", "Novo Nordisk A/S"], ["symbol", "NVO"], ["updated_at", "2014-08-24 19:14:44.063948"], ["year_heigh", 48.42], ["year_low", 32.2]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Completed 201 Created in 5ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/api/stocks/21" for 127.0.0.1 at 2014-08-24 15:14:47 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"21"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 21]]
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 21]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Completed 204 No Content in 7ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 17:57:16 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.4ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:18 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.3ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/api/stocks/1" for 127.0.0.1 at 2014-08-24 17:57:20 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 204 No Content in 5ms (ActiveRecord: 1.6ms)
+
+
+Started DELETE "/api/stocks/2" for 127.0.0.1 at 2014-08-24 17:57:20 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 204 No Content in 4ms (ActiveRecord: 1.5ms)
+
+
+Started DELETE "/api/stocks/3" for 127.0.0.1 at 2014-08-24 17:57:21 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Completed 204 No Content in 5ms (ActiveRecord: 1.4ms)
+
+
+Started DELETE "/api/stocks/4" for 127.0.0.1 at 2014-08-24 17:57:21 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Completed 204 No Content in 4ms (ActiveRecord: 1.0ms)
+
+
+Started DELETE "/api/stocks/5" for 127.0.0.1 at 2014-08-24 17:57:21 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Completed 204 No Content in 5ms (ActiveRecord: 1.0ms)
+
+
+Started DELETE "/api/stocks/6" for 127.0.0.1 at 2014-08-24 17:57:21 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 204 No Content in 6ms (ActiveRecord: 2.1ms)
+
+
+Started DELETE "/api/stocks/7" for 127.0.0.1 at 2014-08-24 17:57:21 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 7]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Completed 204 No Content in 8ms (ActiveRecord: 2.8ms)
+
+
+Started DELETE "/api/stocks/20" for 127.0.0.1 at 2014-08-24 17:57:21 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"20"}
+  [1m[36mStock Load (0.3ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 20]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 20]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Completed 204 No Content in 7ms (ActiveRecord: 2.0ms)
+
+
+Started DELETE "/api/stocks/22" for 127.0.0.1 at 2014-08-24 17:57:21 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"22"}
+  [1m[36mStock Load (0.4ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 22]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 22]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 204 No Content in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 17:57:23 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.5ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:24 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.2ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:26 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 21:57:26.056052"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 21:57:26.056052"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 14ms (Views: 1.1ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:26 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 21:57:26.156050"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 21:57:26.156050"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Completed 201 Created in 12ms (Views: 1.5ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:26 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 21:57:26.249720"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 21:57:26.249720"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:27 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39", "stock"=>{"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39"}}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "stocks" ("bid", "created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["bid", 3.66], ["created_at", "2014-08-24 21:57:27.674227"], ["name", "Array BioPharma I"], ["symbol", "ARRY"], ["updated_at", "2014-08-24 21:57:27.674227"], ["year_heigh", 6.66], ["year_low", 3.39]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Completed 201 Created in 13ms (Views: 1.8ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:27 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39", "stock"=>{"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stocks" ("bid", "created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?, ?)  [["bid", 3.66], ["created_at", "2014-08-24 21:57:27.771150"], ["name", "Array BioPharma I"], ["symbol", "ARRY"], ["updated_at", "2014-08-24 21:57:27.771150"], ["year_heigh", 6.66], ["year_low", 3.39]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 16ms (Views: 0.7ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:29 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95", "stock"=>{"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 21:57:29.688579"], ["name", "Sanofi American D"], ["symbol", "SNY"], ["updated_at", "2014-08-24 21:57:29.688579"], ["year_heigh", 54.64], ["year_low", 46.95]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Completed 201 Created in 10ms (Views: 0.8ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:29 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95", "stock"=>{"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 21:57:29.780900"], ["name", "Sanofi American D"], ["symbol", "SNY"], ["updated_at", "2014-08-24 21:57:29.780900"], ["year_heigh", 54.64], ["year_low", 46.95]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 8ms (Views: 0.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 17:57:34 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:34 -0400
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:34 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:34 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:34 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:34 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:34 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.2ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.3ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:35 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/api/stocks/23" for 127.0.0.1 at 2014-08-24 17:57:41 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"23"}
+  [1m[35mStock Load (0.1ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 23]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 23]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 6ms (ActiveRecord: 2.5ms)
+
+
+Started DELETE "/api/stocks/24" for 127.0.0.1 at 2014-08-24 17:57:41 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"24"}
+  [1m[35mStock Load (0.2ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 24]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 24]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 8ms (ActiveRecord: 2.5ms)
+
+
+Started DELETE "/api/stocks/25" for 127.0.0.1 at 2014-08-24 17:57:41 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"25"}
+  [1m[35mStock Load (0.2ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 25]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 25]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 6ms (ActiveRecord: 2.4ms)
+
+
+Started DELETE "/api/stocks/26" for 127.0.0.1 at 2014-08-24 17:57:41 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"26"}
+  [1m[35mStock Load (0.2ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 26]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 26]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 9ms (ActiveRecord: 3.7ms)
+
+
+Started DELETE "/api/stocks/27" for 127.0.0.1 at 2014-08-24 17:57:41 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"27"}
+  [1m[35mStock Load (0.2ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 27]]
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 27]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 7ms (ActiveRecord: 2.1ms)
+
+
+Started DELETE "/api/stocks/28" for 127.0.0.1 at 2014-08-24 17:57:41 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"28"}
+  [1m[35mStock Load (0.1ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 28]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 28]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 6ms (ActiveRecord: 2.4ms)
+
+
+Started DELETE "/api/stocks/29" for 127.0.0.1 at 2014-08-24 17:57:42 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"29"}
+  [1m[35mStock Load (0.1ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 29]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 29]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 5ms (ActiveRecord: 2.2ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:46 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 21:57:46.227994"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 21:57:46.227994"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Completed 201 Created in 9ms (Views: 3.6ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:46 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 21:57:46.329453"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 21:57:46.329453"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 9ms (Views: 1.7ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:46 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 21:57:46.420025"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 21:57:46.420025"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 201 Created in 8ms (Views: 0.5ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:49 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95", "stock"=>{"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 21:57:49.540774"], ["name", "Sanofi American D"], ["symbol", "SNY"], ["updated_at", "2014-08-24 21:57:49.540774"], ["year_heigh", 54.64], ["year_low", 46.95]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 7ms (Views: 0.9ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:49 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95", "stock"=>{"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 21:57:49.631639"], ["name", "Sanofi American D"], ["symbol", "SNY"], ["updated_at", "2014-08-24 21:57:49.631639"], ["year_heigh", 54.64], ["year_low", 46.95]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 201 Created in 6ms (Views: 1.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.3ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 17:57:51 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.0ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 17:57:52 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.2ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/api/stocks/30" for 127.0.0.1 at 2014-08-24 17:57:57 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"30"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 30]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 30]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Completed 204 No Content in 7ms (ActiveRecord: 2.2ms)
+
+
+Started DELETE "/api/stocks/31" for 127.0.0.1 at 2014-08-24 17:57:57 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"31"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 31]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 31]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 204 No Content in 6ms (ActiveRecord: 1.6ms)
+
+
+Started DELETE "/api/stocks/32" for 127.0.0.1 at 2014-08-24 17:57:57 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"32"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 32]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 32]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Completed 204 No Content in 6ms (ActiveRecord: 2.9ms)
+
+
+Started DELETE "/api/stocks/33" for 127.0.0.1 at 2014-08-24 17:57:58 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"33"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 33]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 204 No Content in 6ms (ActiveRecord: 1.7ms)
+
+
+Started DELETE "/api/stocks/34" for 127.0.0.1 at 2014-08-24 17:57:59 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"34"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 34]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 34]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 204 No Content in 6ms (ActiveRecord: 1.6ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:58:02 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95", "stock"=>{"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 21:58:02.280367"], ["name", "Sanofi American D"], ["symbol", "SNY"], ["updated_at", "2014-08-24 21:58:02.280367"], ["year_heigh", 54.64], ["year_low", 46.95]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 9ms (Views: 0.9ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:58:02 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95", "stock"=>{"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 21:58:02.372355"], ["name", "Sanofi American D"], ["symbol", "SNY"], ["updated_at", "2014-08-24 21:58:02.372355"], ["year_heigh", 54.64], ["year_low", 46.95]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Completed 201 Created in 10ms (Views: 1.5ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:58:02 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95", "stock"=>{"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 21:58:02.472418"], ["name", "Sanofi American D"], ["symbol", "SNY"], ["updated_at", "2014-08-24 21:58:02.472418"], ["year_heigh", 54.64], ["year_low", 46.95]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 7ms (Views: 1.0ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:58:05 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"AMZN", "name"=>"Amazon.com, Inc.", "bid"=>"331.85", "year_heigh"=>"408.06", "year_low"=>"279.33", "stock"=>{"symbol"=>"AMZN", "name"=>"Amazon.com, Inc.", "bid"=>"331.85", "year_heigh"=>"408.06", "year_low"=>"279.33"}}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "stocks" ("bid", "created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["bid", 331.85], ["created_at", "2014-08-24 21:58:05.550343"], ["name", "Amazon.com, Inc."], ["symbol", "AMZN"], ["updated_at", "2014-08-24 21:58:05.550343"], ["year_heigh", 408.06], ["year_low", 279.33]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 201 Created in 7ms (Views: 0.6ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 17:58:05 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"AMZN", "name"=>"Amazon.com, Inc.", "bid"=>"331.85", "year_heigh"=>"408.06", "year_low"=>"279.33", "stock"=>{"symbol"=>"AMZN", "name"=>"Amazon.com, Inc.", "bid"=>"331.85", "year_heigh"=>"408.06", "year_low"=>"279.33"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "stocks" ("bid", "created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?, ?)  [["bid", 331.85], ["created_at", "2014-08-24 21:58:05.635192"], ["name", "Amazon.com, Inc."], ["symbol", "AMZN"], ["updated_at", "2014-08-24 21:58:05.635192"], ["year_heigh", 408.06], ["year_low", 279.33]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 5ms (Views: 0.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.3ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 17:58:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.7ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 17:58:08 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/api/stocks/35" for 127.0.0.1 at 2014-08-24 17:58:12 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"35"}
+  [1m[35mStock Load (0.1ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 35]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 35]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 6ms (ActiveRecord: 1.9ms)
+
+
+Started DELETE "/api/stocks/36" for 127.0.0.1 at 2014-08-24 17:58:13 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"36"}
+  [1m[35mStock Load (0.2ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 36]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 36]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 9ms (ActiveRecord: 2.0ms)
+
+
+Started DELETE "/api/stocks/37" for 127.0.0.1 at 2014-08-24 17:58:13 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"37"}
+  [1m[35mStock Load (0.2ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 37]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 37]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 5ms (ActiveRecord: 1.3ms)
+
+
+Started DELETE "/api/stocks/38" for 127.0.0.1 at 2014-08-24 17:58:14 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"38"}
+  [1m[35mStock Load (0.2ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 38]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 38]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 6ms (ActiveRecord: 1.9ms)
+
+
+Started DELETE "/api/stocks/39" for 127.0.0.1 at 2014-08-24 17:58:14 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"39"}
+  [1m[35mStock Load (0.5ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 39]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 39]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:00:56 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.2ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:00:59 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 22:00:59.241689"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 22:00:59.241689"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 9ms (Views: 0.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:00:59 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 22:00:59.356371"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 22:00:59.356371"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 201 Created in 10ms (Views: 1.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:00:59 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 22:00:59.447708"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 22:00:59.447708"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 8ms (Views: 1.2ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:01:01 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39", "stock"=>{"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39"}}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stocks" ("bid", "created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["bid", 3.66], ["created_at", "2014-08-24 22:01:01.940123"], ["name", "Array BioPharma I"], ["symbol", "ARRY"], ["updated_at", "2014-08-24 22:01:01.940123"], ["year_heigh", 6.66], ["year_low", 3.39]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 201 Created in 9ms (Views: 1.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:01:02 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39", "stock"=>{"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "stocks" ("bid", "created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?, ?)  [["bid", 3.66], ["created_at", "2014-08-24 22:01:02.041779"], ["name", "Array BioPharma I"], ["symbol", "ARRY"], ["updated_at", "2014-08-24 22:01:02.041779"], ["year_heigh", 6.66], ["year_low", 3.39]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 6ms (Views: 0.6ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:01:04 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95", "stock"=>{"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 22:01:04.716599"], ["name", "Sanofi American D"], ["symbol", "SNY"], ["updated_at", "2014-08-24 22:01:04.716599"], ["year_heigh", 54.64], ["year_low", 46.95]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Completed 201 Created in 10ms (Views: 1.0ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:01:04 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95", "stock"=>{"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 22:01:04.809533"], ["name", "Sanofi American D"], ["symbol", "SNY"], ["updated_at", "2014-08-24 22:01:04.809533"], ["year_heigh", 54.64], ["year_low", 46.95]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 4ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.3ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 18:01:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.1ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:01:08 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.3ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:01:12 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.1ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/api/stocks/40" for 127.0.0.1 at 2014-08-24 18:01:41 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"40"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 40]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 40]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Completed 204 No Content in 5ms (ActiveRecord: 1.8ms)
+
+
+Started DELETE "/api/stocks/41" for 127.0.0.1 at 2014-08-24 18:01:41 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"41"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 41]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 41]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Completed 204 No Content in 8ms (ActiveRecord: 2.6ms)
+
+
+Started DELETE "/api/stocks/42" for 127.0.0.1 at 2014-08-24 18:01:41 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"42"}
+  [1m[36mStock Load (0.3ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 42]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 42]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 204 No Content in 9ms (ActiveRecord: 2.9ms)
+
+
+Started DELETE "/api/stocks/43" for 127.0.0.1 at 2014-08-24 18:01:41 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"43"}
+  [1m[36mStock Load (0.3ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 43]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 43]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 204 No Content in 9ms (ActiveRecord: 2.9ms)
+
+
+Started DELETE "/api/stocks/44" for 127.0.0.1 at 2014-08-24 18:01:41 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"44"}
+  [1m[36mStock Load (0.4ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 44]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 44]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 204 No Content in 6ms (ActiveRecord: 1.4ms)
+
+
+Started DELETE "/api/stocks/45" for 127.0.0.1 at 2014-08-24 18:01:41 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"45"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 45]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 45]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Completed 204 No Content in 7ms (ActiveRecord: 2.2ms)
+
+
+Started DELETE "/api/stocks/46" for 127.0.0.1 at 2014-08-24 18:01:41 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"46"}
+  [1m[36mStock Load (0.4ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 46]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 46]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Completed 204 No Content in 9ms (ActiveRecord: 2.6ms)
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateStocks (20140820024312)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "stocks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "symbol" varchar(255), "name" varchar(255), "bid" decimal, "ask" decimal, "year_heigh" decimal, "year_low" decimal, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140820024312"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "stocks"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stocks" ("ask", "bid", "created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["ask", 7.28], ["bid", 7.17], ["created_at", "2014-08-24 22:02:07.434957"], ["name", "Mannkind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 22:02:07.434957"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-24 22:02:07.439266"], ["name", "Array BioPharma Inc."], ["symbol", "ARRY"], ["updated_at", "2014-08-24 22:02:07.439266"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-24 22:02:07.440838"], ["name", "Sanofi"], ["symbol", "SNY"], ["updated_at", "2014-08-24 22:02:07.440838"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-24 22:02:07.442282"], ["name", "Eli Lilly and Company"], ["symbol", "LLY"], ["updated_at", "2014-08-24 22:02:07.442282"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-24 22:02:07.443664"], ["name", "Merck & Co. Inc."], ["symbol", "MRK"], ["updated_at", "2014-08-24 22:02:07.443664"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-24 22:02:07.445074"], ["name", "Amazon.com Inc."], ["symbol", "AMZN"], ["updated_at", "2014-08-24 22:02:07.445074"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-08-24 22:02:07.446473"], ["name", "The Carlyle Group LP"], ["symbol", "CG"], ["updated_at", "2014-08-24 22:02:07.446473"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 142ms (Views: 142.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.2ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 18:02:18 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.2ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.3ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:02:19 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:02:27 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20", "stock"=>{"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 22:02:27.604340"], ["name", "Novo Nordisk A/S"], ["symbol", "NVO"], ["updated_at", "2014-08-24 22:02:27.604340"], ["year_heigh", 48.42], ["year_low", 32.2]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Completed 201 Created in 19ms (Views: 3.5ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:02:27 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20", "stock"=>{"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20"}}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 22:02:27.695315"], ["name", "Novo Nordisk A/S"], ["symbol", "NVO"], ["updated_at", "2014-08-24 22:02:27.695315"], ["year_heigh", 48.42], ["year_low", 32.2]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 9ms (Views: 0.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:02:28 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.3ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 8ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/api/stocks/8" for 127.0.0.1 at 2014-08-24 18:02:32 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 8]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 204 No Content in 7ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:02:34 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+  [1m[36mStock Load (1.4ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:03:12 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20", "stock"=>{"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 22:03:12.199183"], ["name", "Novo Nordisk A/S"], ["symbol", "NVO"], ["updated_at", "2014-08-24 22:03:12.199183"], ["year_heigh", 48.42], ["year_low", 32.2]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Completed 201 Created in 9ms (Views: 0.6ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:03:12 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20", "stock"=>{"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 22:03:12.310460"], ["name", "Novo Nordisk A/S"], ["symbol", "NVO"], ["updated_at", "2014-08-24 22:03:12.310460"], ["year_heigh", 48.42], ["year_low", 32.2]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 4ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:03:12 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20", "stock"=>{"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 22:03:12.417282"], ["name", "Novo Nordisk A/S"], ["symbol", "NVO"], ["updated_at", "2014-08-24 22:03:12.417282"], ["year_heigh", 48.42], ["year_low", 32.2]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Completed 201 Created in 8ms (Views: 0.6ms | ActiveRecord: 2.4ms)
+
+
+Started DELETE "/api/stocks/1" for 127.0.0.1 at 2014-08-24 18:03:21 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Completed 204 No Content in 5ms (ActiveRecord: 1.4ms)
+
+
+Started DELETE "/api/stocks/2" for 127.0.0.1 at 2014-08-24 18:03:21 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 204 No Content in 5ms (ActiveRecord: 1.6ms)
+
+
+Started DELETE "/api/stocks/3" for 127.0.0.1 at 2014-08-24 18:03:22 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 204 No Content in 4ms (ActiveRecord: 1.5ms)
+
+
+Started DELETE "/api/stocks/4" for 127.0.0.1 at 2014-08-24 18:03:22 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 4]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 204 No Content in 4ms (ActiveRecord: 1.5ms)
+
+
+Started DELETE "/api/stocks/5" for 127.0.0.1 at 2014-08-24 18:03:22 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mStock Load (0.6ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 204 No Content in 10ms (ActiveRecord: 2.9ms)
+
+
+Started DELETE "/api/stocks/6" for 127.0.0.1 at 2014-08-24 18:03:22 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Completed 204 No Content in 6ms (ActiveRecord: 2.3ms)
+
+
+Started DELETE "/api/stocks/7" for 127.0.0.1 at 2014-08-24 18:03:22 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mStock Load (0.4ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 7]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Completed 204 No Content in 9ms (ActiveRecord: 2.6ms)
+
+
+Started DELETE "/api/stocks/9" for 127.0.0.1 at 2014-08-24 18:03:22 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 204 No Content in 5ms (ActiveRecord: 1.7ms)
+
+
+Started DELETE "/api/stocks/11" for 127.0.0.1 at 2014-08-24 18:03:22 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 11]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Completed 204 No Content in 7ms (ActiveRecord: 2.2ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:03:24 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 22:03:24.489287"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 22:03:24.489287"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[36m (46.8ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 54ms (Views: 1.5ms | ActiveRecord: 47.3ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:03:24 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 22:03:24.582655"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 22:03:24.582655"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Completed 201 Created in 7ms (Views: 1.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 18:03:27 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.8ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:03:28 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.3ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/api/stocks/10" for 127.0.0.1 at 2014-08-24 18:03:42 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 10]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 204 No Content in 4ms (ActiveRecord: 1.4ms)
+
+
+Started DELETE "/api/stocks/12" for 127.0.0.1 at 2014-08-24 18:03:43 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"12"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 12]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 204 No Content in 5ms (ActiveRecord: 1.6ms)
+
+
+Started DELETE "/api/stocks/13" for 127.0.0.1 at 2014-08-24 18:03:43 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"13"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 13]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Completed 204 No Content in 6ms (ActiveRecord: 1.9ms)
+
+
+Started DELETE "/api/stocks/14" for 127.0.0.1 at 2014-08-24 18:03:43 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"14"}
+  [1m[36mStock Load (0.3ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 14]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 204 No Content in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 18:03:44 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:03:45 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 18:03:45 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.2ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:03:46 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.4ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:03:50 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39", "stock"=>{"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stocks" ("bid", "created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?, ?)  [["bid", 3.66], ["created_at", "2014-08-24 22:03:50.466071"], ["name", "Array BioPharma I"], ["symbol", "ARRY"], ["updated_at", "2014-08-24 22:03:50.466071"], ["year_heigh", 6.66], ["year_low", 3.39]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 7ms (Views: 2.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:03:50 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39", "stock"=>{"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "stocks" ("bid", "created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["bid", 3.66], ["created_at", "2014-08-24 22:03:50.540242"], ["name", "Array BioPharma I"], ["symbol", "ARRY"], ["updated_at", "2014-08-24 22:03:50.540242"], ["year_heigh", 6.66], ["year_low", 3.39]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 201 Created in 9ms (Views: 0.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:03:54 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:04:43 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.2ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:04:47 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 22:04:47.948171"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 22:04:47.948171"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 10ms (Views: 1.4ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:04:48 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 22:04:48.765051"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 22:04:48.765051"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Completed 201 Created in 10ms (Views: 0.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:04:50 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:15 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:05:16 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.2ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 18:05:16 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.9ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:05:16 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/api/stocks/15" for 127.0.0.1 at 2014-08-24 18:05:18 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"15"}
+  [1m[35mStock Load (0.1ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 15]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 5ms (ActiveRecord: 1.6ms)
+
+
+Started DELETE "/api/stocks/16" for 127.0.0.1 at 2014-08-24 18:05:18 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"16"}
+  [1m[35mStock Load (0.2ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 16]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 16]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 7ms (ActiveRecord: 2.6ms)
+
+
+Started DELETE "/api/stocks/17" for 127.0.0.1 at 2014-08-24 18:05:19 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"17"}
+  [1m[35mStock Load (0.1ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 17]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 17]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 5ms (ActiveRecord: 1.5ms)
+
+
+Started DELETE "/api/stocks/18" for 127.0.0.1 at 2014-08-24 18:05:20 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"18"}
+  [1m[35mStock Load (0.2ms)[0m  SELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stocks" WHERE "stocks"."id" = ?  [["id", 18]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 6ms (ActiveRecord: 1.6ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:05:22 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 22:05:22.360726"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 22:05:22.360726"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 201 Created in 5ms (Views: 0.6ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:05:22 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 22:05:22.467077"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 22:05:22.467077"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 13ms (Views: 1.1ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:05:25 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.1ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 18:05:29 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.6ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:05:30 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.2ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 18:06:58 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.9ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.4ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:07:00 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39", "stock"=>{"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stocks" ("bid", "created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["bid", 3.66], ["created_at", "2014-08-24 22:07:00.547249"], ["name", "Array BioPharma I"], ["symbol", "ARRY"], ["updated_at", "2014-08-24 22:07:00.547249"], ["year_heigh", 6.66], ["year_low", 3.39]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Completed 201 Created in 7ms (Views: 1.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:07:01 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.3ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:07:06 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MRK", "name"=>"Merck & Company,", "bid"=>nil, "year_heigh"=>"59.84", "year_low"=>"44.62", "stock"=>{"symbol"=>"MRK", "name"=>"Merck & Company,", "bid"=>nil, "year_heigh"=>"59.84", "year_low"=>"44.62"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 22:07:06.563855"], ["name", "Merck & Company,"], ["symbol", "MRK"], ["updated_at", "2014-08-24 22:07:06.563855"], ["year_heigh", 59.84], ["year_low", 44.62]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 201 Created in 5ms (Views: 0.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:07:08 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:07:13 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39", "stock"=>{"symbol"=>"ARRY", "name"=>"Array BioPharma I", "bid"=>"3.66", "year_heigh"=>"6.66", "year_low"=>"3.39"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "stocks" ("bid", "created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["bid", 3.66], ["created_at", "2014-08-24 22:07:13.572007"], ["name", "Array BioPharma I"], ["symbol", "ARRY"], ["updated_at", "2014-08-24 22:07:13.572007"], ["year_heigh", 6.66], ["year_low", 3.39]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Completed 201 Created in 7ms (Views: 2.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:07:15 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:07:19 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.3ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/api/stocks/19" for 127.0.0.1 at 2014-08-24 18:07:20 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"19"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 19]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 19]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Completed 204 No Content in 6ms (ActiveRecord: 2.0ms)
+
+
+Started DELETE "/api/stocks/20" for 127.0.0.1 at 2014-08-24 18:07:20 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"20"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 20]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 20]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Completed 204 No Content in 6ms (ActiveRecord: 2.1ms)
+
+
+Started DELETE "/api/stocks/21" for 127.0.0.1 at 2014-08-24 18:07:20 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"21"}
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 21]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 21]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Completed 204 No Content in 7ms (ActiveRecord: 3.0ms)
+
+
+Started DELETE "/api/stocks/22" for 127.0.0.1 at 2014-08-24 18:07:20 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"22"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 22]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 22]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 204 No Content in 5ms (ActiveRecord: 1.9ms)
+
+
+Started DELETE "/api/stocks/23" for 127.0.0.1 at 2014-08-24 18:07:20 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"23"}
+  [1m[36mStock Load (0.3ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 23]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 23]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 204 No Content in 6ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:07:21 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:07:32 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-24 22:07:32.293754"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 22:07:32.293754"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Completed 201 Created in 6ms (Views: 0.9ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:07:32 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 22:07:32.394696"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 22:07:32.394696"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 5ms (Views: 0.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:07:34 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.1ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:07:38 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95", "stock"=>{"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 22:07:38.896416"], ["name", "Sanofi American D"], ["symbol", "SNY"], ["updated_at", "2014-08-24 22:07:38.896416"], ["year_heigh", 54.64], ["year_low", 46.95]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 6ms (Views: 0.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:07:39 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.2ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:07:49 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20", "stock"=>{"symbol"=>"NVO", "name"=>"Novo Nordisk A/S", "bid"=>nil, "year_heigh"=>"48.42", "year_low"=>"32.20"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 22:07:49.475480"], ["name", "Novo Nordisk A/S"], ["symbol", "NVO"], ["updated_at", "2014-08-24 22:07:49.475480"], ["year_heigh", 48.42], ["year_low", 32.2]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 6ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:07:50 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.2ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:08:00 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80", "stock"=>{"symbol"=>"MNKD", "name"=>"MannKind Corporat", "bid"=>nil, "year_heigh"=>"11.48", "year_low"=>"3.80"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 22:08:00.107593"], ["name", "MannKind Corporat"], ["symbol", "MNKD"], ["updated_at", "2014-08-24 22:08:00.107593"], ["year_heigh", 11.48], ["year_low", 3.8]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 6ms (Views: 1.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:08:00 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.2ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 18:08:12 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.7ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:08:22 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"AMZN", "name"=>"Amazon.com, Inc.", "bid"=>"331.85", "year_heigh"=>"408.06", "year_low"=>"279.33", "stock"=>{"symbol"=>"AMZN", "name"=>"Amazon.com, Inc.", "bid"=>"331.85", "year_heigh"=>"408.06", "year_low"=>"279.33"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "stocks" ("bid", "created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["bid", 331.85], ["created_at", "2014-08-24 22:08:22.566867"], ["name", "Amazon.com, Inc."], ["symbol", "AMZN"], ["updated_at", "2014-08-24 22:08:22.566867"], ["year_heigh", 408.06], ["year_low", 279.33]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Completed 201 Created in 8ms (Views: 1.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:08:23 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:09:33 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.3ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/api/stocks/24" for 127.0.0.1 at 2014-08-24 18:09:34 -0400
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"24"}
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT  "stocks".* FROM "stocks"  WHERE "stocks"."id" = ? LIMIT 1[0m  [["id", 24]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stocks" WHERE "stocks"."id" = ?[0m  [["id", 24]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 204 No Content in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 18:09:35 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.5ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:09:36 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.4ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 8ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/stocks" for 127.0.0.1 at 2014-08-24 18:11:36 -0400
+Processing by StocksController#create as JSON
+  Parameters: {"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95", "stock"=>{"symbol"=>"SNY", "name"=>"Sanofi American D", "bid"=>nil, "year_heigh"=>"54.64", "year_low"=>"46.95"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stocks" ("created_at", "name", "symbol", "updated_at", "year_heigh", "year_low") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-24 22:11:36.383363"], ["name", "Sanofi American D"], ["symbol", "SNY"], ["updated_at", "2014-08-24 22:11:36.383363"], ["year_heigh", 54.64], ["year_low", 46.95]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 6ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:11:41 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.1ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 18:13:49 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.5ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:13:50 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.7ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+Processing by StockappController#index as HTML
+  Rendered stockapp/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/stockapp.css?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/stocks.css?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/angular-ui-select2.js?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/angular/controllers/stocks_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/angular/controllers/clock_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/angular/controllers/tabs_controller.js?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/angular/services/stock.js?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/stockapp.js?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/stocks.js?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.1ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/select2x2.png" for 127.0.0.1 at 2014-08-24 18:40:41 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/select2x2.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ericrho/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/ericrho/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.8ms)
+
+
+Started GET "/api/stocks" for 127.0.0.1 at 2014-08-24 18:40:42 -0400
+Processing by StocksController#index as JSON
+  [1m[35mStock Load (0.2ms)[0m  SELECT "stocks".* FROM "stocks"
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/stocks.json" for 127.0.0.1 at 2014-08-24 18:40:47 -0400
+Processing by StocksController#index as JSON
+  [1m[36mStock Load (0.2ms)[0m  [1mSELECT "stocks".* FROM "stocks"[0m
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
