@@ -613,6 +613,10 @@ html[dir="rtl"] .select2-search-choice-close {
     height: 100px;
     overflow: scroll;
 }
+
+.select2-hidden-accessible {
+    display: none;
+}
 /* Retina-ize icons */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi)  {

@@ -24,7 +24,7 @@
       </form>
       <p>
         {{newCompany.name}}
-        ({{newCompany.symbol}})
+        {{newCompany.symbol}}
       </p>
     </div>
 
@@ -63,7 +63,7 @@
               <strong>Ask:</strong> {{ stock.ask }}</br>
               <strong>Year High:</strong> {{ stock.year_heigh}}</br>
               <strong>Year Low:</strong> {{ stock.year_low }}</br>
-              <button class='button [ small radius round]' ng-click='updateStock(stock.id, $id)'>Update</button>
+              <button class='button [ small radius round]' href='' ng-click='updateStock(stock.id, $index)'>Update</button>
               <button class='button [ small secondary alert radius round]' href='' ng-click='deleteStock(stock.id, $index)' id='delete'>Delete</button><hr>
             </li>
           </ul>
