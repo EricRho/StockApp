@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140824232312) do
+ActiveRecord::Schema.define(version: 20140825205940) do
+
+  create_table "stock_lookups", force: true do |t|
+    t.string   "name"
+    t.string   "symbol"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "stocks", force: true do |t|
     t.string   "symbol"
