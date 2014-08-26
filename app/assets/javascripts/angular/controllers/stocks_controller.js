@@ -3,7 +3,17 @@ app.controller('StocksController', ['$scope', 'Stock', '$filter', '$http', '$q',
   $scope.error = false;
 
   $scope.select2Options = {
-
+    'ajax': {
+      url: '/api/derivatives.json',
+      dataType: 'json',
+      data: function(term, page) {
+        return { q: term};
+      },
+      results: function(data, page) {
+        console.log(data);
+        return { results: data };
+      }
+    }
   };
 
   $scope.stocklist = [{symbol: 'MNKD', name: 'Mannkind Corporat'},
@@ -65,6 +75,10 @@ app.controller('StocksController', ['$scope', 'Stock', '$filter', '$http', '$q',
     return deferred.promise;
   };
 
+  $scope.requestOHLC = function (stockid) {
+    return Stock.ohlc(stockid);
+  };
+
   $scope.createStock = function() {
     $scope.getStockData($filter('uppercase')($scope.newCompany['symbol'])).then(function(result) {
       $scope.error = false;
@@ -80,8 +94,7 @@ app.controller('StocksController', ['$scope', 'Stock', '$filter', '$http', '$q',
     $scope.getStockData(stock.symbol).then(function(result) {
       $scope.error = false;
       result.id = stock.id;
-      Stock.update(result);
-      $scope.stocks[idx] = result;
+      $scope.stocks[idx] = Stock.update(result);
     }, function(error) {
       $scope.error = true;
     });

@@ -12,9 +12,9 @@
 
     <div id='findSymbol' class='small-4 columns'>
       <form ng-submit='createStock()'>
-        <select ui-select2='select2Options' ng-model='newCompany' ng-options='stock.name for stock in stocklist' data-placeholder='Companies' ng-required='true' id='companyForm' style='width:200px'>
-          <option value=''></option>
-          <option ng-repeat='stock in stocklist' value=''></option>
+        <input ui-select2='select2Options' ng-model='newCompany' data-placeholder='Companies' ng-required='true' id='companyForm' style='width:200px'>
+         <!--  <option value=''></option>
+          <option ng-repeat='stock in stocklist' value=''></option> -->
         </select>
         <!-- <select ng-model='newCompany', data-placeholder='Enter company name', ng-required='true', id='companyForm' style='width: 190px;'> -->
           <!-- <option value=''></option>
@@ -63,8 +63,17 @@
               <strong>Ask:</strong> {{ stock.ask }}</br>
               <strong>Year High:</strong> {{ stock.year_heigh}}</br>
               <strong>Year Low:</strong> {{ stock.year_low }}</br>
-              <button class='button [ small radius round]' href='' ng-click='updateStock(stock.id, $index)'>Update</button>
-              <button class='button [ small secondary alert radius round]' href='' ng-click='deleteStock(stock.id, $index)' id='delete'>Delete</button><hr>
+              <div id='links'>
+                <button class='button [ small radius round]' href='' ng-click='updateStock(stock.id, $index)'>Update</button>
+                <button class='button [ small secondary alert radius round]' href='' ng-click='deleteStock(stock.id, $index)' id='delete'>Delete</button>
+                Show Charts: <input type='checkbox' ng-model='showStockChart'>
+                <div my-chart stockid='stock.id' stocksymbol='stock.symbol' stockname='stock.name' ng-show='showStockChart' id='chart' style='padding-right: 30px; padding-left: 20px; padding-top: 15px;'>
+                  <div id='loading_chart'>
+                    Loading Chart...
+                  </div>
+                </div>
+                <hr>
+              </div>
             </li>
           </ul>
         </div>

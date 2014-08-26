@@ -18,3 +18,4 @@
 //= require main.js
 //= require_tree ./angular
 //= require_tree .
+//= require highstock
