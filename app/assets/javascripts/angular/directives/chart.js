@@ -22,7 +22,7 @@ app.directive('myChart', function() {
                 type: 'datetime'
               },
               series: [{
-                type: 'candlestick',
+                type: 'ohlc',
                 name: scope.$eval(attrs.stocksymbol),
                 data: ohlc,
                 dataGrouping: {
