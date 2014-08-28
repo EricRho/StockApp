@@ -13,14 +13,6 @@
     <div id='findSymbol' class='small-4 columns'>
       <form ng-submit='createStock()'>
         <input ui-select2='select2Options' ng-model='newCompany' data-placeholder='Companies' ng-required='true' id='companyForm' style='width:200px'>
-         <!--  <option value=''></option>
-          <option ng-repeat='stock in stocklist' value=''></option> -->
-        </select>
-        <!-- <select ng-model='newCompany', data-placeholder='Enter company name', ng-required='true', id='companyForm' style='width: 190px;'> -->
-          <!-- <option value=''></option>
-          <option ng-repeat='stock in stocklist' value=''>{{ stock.name }} {{ stock.symbol }}</option> -->
-        <!-- </select> -->
-        <!-- <input type='submit' value='Follow'> -->
       </form>
       <p>
         {{newCompany.name}}
@@ -36,9 +28,9 @@
       Sorry, unable to communicate with Yahoo Finance API
     </div>
 
-    <div class='medium-8 columns'>
+    <div class='medium-8 columns' id='tabinfo'>
       <div ng-controller='TabsController'>
-        <ul>
+        <ul id='alltabs'>
           <li ng-repeat='tab in tabs' ng-class='{active:isActiveTab(tab.url)}' ng-click='onClickTab(tab)' id='tabs'>{{ tab.title }}</li>
         </ul>
         <div id='mainView'>

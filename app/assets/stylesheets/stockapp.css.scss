@@ -44,7 +44,7 @@ input[type=text] {
 }
 
 #stockList {
-
+  border-bottom: 12px;
 }
 
 #delete {
@@ -62,6 +62,11 @@ input[type=text] {
   border: 1px solid #D9D9D9;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+}
+
+#alltabs {
+  margin-bottom: 0px;
+  margin-left: 0px;
 }
 
 #mainView {
