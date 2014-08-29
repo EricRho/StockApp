@@ -7,7 +7,6 @@
   <%= javascript_include_tag 'application'%>
   <%= csrf_meta_tags %>
 
-  <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
   <% if user_signed_in? %>
     <%= link_to 'edit account', edit_user_registration_path %> |

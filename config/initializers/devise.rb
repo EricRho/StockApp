@@ -21,7 +21,8 @@ Devise.setup do |config|
   # available as additional gems.
   require 'devise/orm/active_record'
 
-  config.omniauth :facebook, "APP_ID", "APP_SECRET"
+config.omniauth :twitter, AppConfig.twitter['clientId'],
+                          AppConfig.twitter['clientSecret']
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is

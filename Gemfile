@@ -29,8 +29,8 @@ gem 'spring',        group: :development
 gem 'angularjs-rails'
 
 gem 'devise'
-
-gem 'omniauth-facebook'
+# Twitter Omniauth
+gem 'omniauth-twitter'
 
 gem 'omniauth'
 
