@@ -1,5 +1,3 @@
-require 'pry'
-
 namespace :db do
   desc "Import stocks to database"
   task import_stocks: :environment do

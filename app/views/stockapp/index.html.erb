@@ -48,7 +48,8 @@
         <div id='viewTwo' ng-controller='StocksController'>
           <h1 id='tab1'>My Stocks</h1>
           <ul>
-            <li ng-repeat='stock in stocks' id='stockList'>
+            <input type='text' ng-model='search' placeholder='Filter your stocks'>
+            <li ng-animate="'animate'" ng-repeat='stock in stocks | filter:search' id='stockList'>
               <strong>{{ stock.symbol }}</strong>
               {{ stock.name}} </br>
               <strong>Bid:</strong> {{ stock.bid}} </bid></br>
@@ -61,7 +62,7 @@
                 Show Charts: <input type='checkbox' ng-model='showStockChart'>
                 <div my-chart stockid='stock.id' stocksymbol='stock.symbol' stockname='stock.name' ng-show='showStockChart' id='chart' style='padding-right: 30px; padding-left: 20px; padding-top: 15px;'>
                   <div id='loading_chart'>
-                    Loading Chart...
+                    Loading Chart... Be Patient... God...
                   </div>
                 </div>
                 <hr>
