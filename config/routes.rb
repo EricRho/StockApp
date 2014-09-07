@@ -13,6 +13,6 @@ Rails.application.routes.draw do
     end
     get :derivatives, to: 'derivatives#index'
   end
-  get '/stockapp' => 'welcome#stockapp'
-  root to: 'stockapp#index'
+  get '/welcome' => 'welcome#stockapp'
+  root to: 'welcome#stockapp'
 end

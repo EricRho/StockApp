@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html ng-app='StockApp'>
-<head>
-  <title>Stockapp</title>
-  <script src="angular-route.js"></script>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application'%>
-  <%= csrf_meta_tags %>
+  <head>
+    <title>Stockapp</title>
+    <script src="angular-route.js"></script>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application'%>
+    <%= csrf_meta_tags %>
 
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-  <% if user_signed_in? %>
-    <%= link_to 'edit account', edit_user_registration_path %> |
-    <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-  <% else %>
-    <%= link_to 'sign in', new_user_session_path %>
-  <%end%>
-</head>
-<body>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+  </head>
 
-<%= yield %>
+  <body>
 
-</body>
+  <div id='header'>
+    <h1>Stock Jocky<small> Time to Lose Some Money</small></h1>
+      <% if user_signed_in? %>
+        <%= link_to 'edit account', edit_user_registration_path %>
+        <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+      <% else %>
+        <%= link_to 'sign in', new_user_session_path %>
+    <%end%>
+    <div ng-controller='ClockController' id='clock'>
+      {{ clock | date:'medium' }}
+    </div>
+    </div>
+
+  <%= yield %>
+
+  </body>
 </html>

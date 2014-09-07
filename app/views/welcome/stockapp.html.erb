@@ -1,0 +1,74 @@
+<div class='row' id='everything'>
+
+  <div ng-controller='StocksController'>
+
+    <div id='findSymbol' class='small-4 columns'>
+      <form ng-submit='createStock()'>
+        <input ui-select2='select2Options' ng-model='newCompany' data-placeholder='Companies' ng-required='true' id='companyForm' style='width:200px'>
+      </form>
+      <p>
+        {{newCompany.name}}
+        {{newCompany.symbol}}
+      </p>
+    </div>
+
+    <div ng-show='loading' id='loading'>
+      Loading, please wait
+    </div>
+
+    <div ng-show='error'>
+      Sorry, unable to communicate with Yahoo Finance API
+    </div>
+
+    <div class='medium-8 columns' id='tabinfo'>
+      <div ng-controller='TabsController'>
+        <ul id='alltabs'>
+          <li ng-repeat='tab in tabs' ng-class='{active:isActiveTab(tab.url)}' ng-click='onClickTab(tab)' id='tabs'>{{ tab.title }}</li>
+        </ul>
+        <div id='mainView'>
+          <div ng-include='currentTab'></div>
+        </div>
+      </div>
+    </div>
+      <script type='text/ng-template' id='one.tpl.html'>
+        <div id='viewOne'>
+          <h1>My Profile</h1>
+          <p>Shit... I forgot that Im going to have to make something for people to view their own profile... damnit...</p>
+        </div>
+      </script>
+      <script type='text/ng-template' id='two.tpl.html'>
+        <div id='viewTwo' ng-controller='StocksController'>
+          <h1 id='tab1'>My Stocks</h1>
+          <ul>
+            <input type='text' ng-model='search' placeholder='Filter your stocks'>
+            <li ng-animate="'animate'" ng-repeat='stock in stocks | filter:search' id='stockList'>
+              <strong>{{ stock.symbol }}</strong>
+              {{ stock.name}} </br>
+              <strong>Bid:</strong> {{ stock.bid}} </bid></br>
+              <strong>Ask:</strong> {{ stock.ask }}</br>
+              <strong>Year High:</strong> {{ stock.year_heigh}}</br>
+              <strong>Year Low:</strong> {{ stock.year_low }}</br>
+              <div id='links'>
+                <button class='button [ small radius round]' href='' ng-click='updateStock(stock.id, $index)'>Update</button>
+                <button class='button [ small secondary alert radius round]' href='' ng-click='deleteStock(stock.id, $index)' id='delete'>Delete</button>
+                Show Charts: <input type='checkbox' ng-model='showStockChart'>
+                <div my-chart stockid='stock.id' stocksymbol='stock.symbol' stockname='stock.name' ng-show='showStockChart' id='chart' style='padding-right: 30px; padding-left: 20px; padding-top: 15px;'>
+                  <div id='loading_chart'>
+                    Loading Chart... Be Patient... God...
+                  </div>
+                </div>
+                <hr>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </script>
+      <script type='text/ng-template' id='three.tpl.html'>
+        <div id='viewThree'>
+          <h1>Feed</h1>
+          <p>News Feed stuff will go here so any stocks/posts your friends make will show up aqui</p>
+        </div>
+      </script>
+    </div>
+  </div>
+</div>
