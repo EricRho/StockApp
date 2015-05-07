@@ -8,12 +8,23 @@
   <%= csrf_meta_tags %>
 
   <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-  <% if user_signed_in? %>
+
+  <div id='header'>
+    <h1>Stock Jocky<small> Time to Lose Some Money</small></h1>
+      <% if user_signed_in? %>
+      <%= link_to 'edit account', edit_user_registration_path %> |
+      <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+      <% else %>
+    <%= link_to 'sign in', new_user_session_path %>
+  <%end%>
+</div>
+
+  <!-- <% if user_signed_in? %>
     <%= link_to 'edit account', edit_user_registration_path %> |
     <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
   <% else %>
     <%= link_to 'sign in', new_user_session_path %>
-  <%end%>
+  <%end%> -->
 </head>
 <body>
 

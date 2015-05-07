@@ -30,11 +30,16 @@ app.controller('StocksController', ['$scope', 'Stock', '$filter', '$http', '$q',
     .success(function(data, status, headers, config)
     {
       stock.symbol = symbol;
-      stock.name = data.query.results.quote["Name"];
-      stock.bid = data.query.results.quote["Bid"];
-      stock.ask = data.query.results.quote["ask"];
-      stock.year_heigh = data.query.results.quote["YearHigh"];
-      stock.year_low = data.query.results.quote["YearLow"];
+      // stock.name = data.query.results.quote["Name"];
+      // stock.bid = data.query.results.quote["Bid"];
+      // stock.ask = data.query.results.quote["ask"];
+      // stock.year_heigh = data.query.results.quote.YearHigh;
+      // stock.year_low = data.query.results.quote["YearLow"];
+      stock.name = data.query.results.quote.Name;
+      stock.bid = data.query.results.quote.Bid;
+      stock.ask = data.query.results.quote.Ask;
+      stock.year_heigh = data.query.results.quote.YearHigh;
+      stock.year_low = data.query.results.quote.YearLow;
       $scope.loading = false;
       deferred.resolve(stock);
     }).error(function(data, status, headers, config) {
